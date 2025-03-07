@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family:'harabara';
+    src: url('../assets/fonts/harabara.otf');
+    font-weight: normal;
+    font-size: normal;
+}
