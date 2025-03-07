@@ -292,6 +292,9 @@
   .col-auto {
     grid-column: auto;
   }
+  .col-span-8 {
+    grid-column: span 8 / span 8;
+  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -2094,6 +2097,21 @@
       @media (hover: hover) {
         color: var(--color-gray-600);
       }
+    }
+  }
+  .sm\:fixed {
+    @media (width >= 40rem) {
+      position: fixed;
+    }
+  }
+  .sm\:sticky {
+    @media (width >= 40rem) {
+      position: sticky;
+    }
+  }
+  .sm\:bottom-0 {
+    @media (width >= 40rem) {
+      bottom: calc(var(--spacing) * 0);
     }
   }
   .sm\:col-span-2 {
