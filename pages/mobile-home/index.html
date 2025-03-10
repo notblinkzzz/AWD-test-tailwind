@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Template tailwind test</title>
+</head>
+
+<body class="flex flex-col h-screen overflow-hidden ">
+
+
+    <header class="flex justify-between items-center px-2 h-16">
+        <div class="flex items-center gap-2 ">
+            <img class="w-[70px] h-[70px]" src="../../assets/img/logo-app-removebg-preview.png" alt="">
+            <h1 class="font-logo text-3xl text-primary">Langora</h1>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <p class="text-[.7rem]">Sample dark mode button</p>
+            <button id="darkModeToggle" class="bg-third text-white p-2 rounded-full flex items-center justify-between w-19 border-1 border-primary">
+                <span class="circle bg-white w-6 h-6 rounded-full transition-transform transform translate-x-9"></span>
+            </button>
+        </div>
+
+    </header>
+
+    <nav class="top-nav w-full  p-4 flex justify-end items-center border-b">
+
+        <div id="menu-container" class="flex items-center space-x-6">
+            <!--NAV LINKS HIDDEN-->
+            <div id="menu-items" class="hidden md:flex space-x-6">
+                <a href="#" class="text-primary">Home</a>
+                <a href="#" class="text-primary">Learn</a>
+                <a href="#" class="text-primary">Practice</a>
+            </div>
+
+            <i id="menu-icon" class="fa-solid fa-bars cursor-pointer text-2xl text-primary"></i>
+        </div>
+    </nav>
+
+    <main class="grid grid-cols-[120px_auto] w-full flex-1 overflow-hidden">
+        <!-- SIDEBAR -->
+        <aside class="bg-white border-r flex flex-col items-center space-y-6 p-8">
+            <div class="streak-language flex justify-center items-center gap-2">
+                <i class="fa-solid fa-fire text-3xl"></i>
+                <img class="h-[2rem] w-[2rem]" src="../../assets/img/china.png">
+            </div>
+            <div class="flex flex-col items-center justify-between py-8 h-full">
+                <a href="#" class="flex flex-col items-center gap-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary text-primary">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p class="text-xs text-blue-900">PROFILE</p>
+                </a>
+                <a href="#" class="flex flex-col items-center gap-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">      \
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <p class="text-xs text-blue-900">CHALLENGES</p>
+                </a>
+                <a href="#" class="flex flex-col items-center gap-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p class="text-xs text-blue-900">SHOP</p>
+                </a>
+                <a href="#" class="flex flex-col items-center gap-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <p class="text-xs text-blue-900">ABOUT</p>
+                </a>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <section class="flex flex-col gap-4 bg-white flex-1 p-6">
+            <h2 class="text-lg font-semibold text-third">BEGINNER</h2>
+            <h1 class="text-xl font-bold text-primary">FRENCH – LEVEL 1</h1>
+        </section>
+    </main>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

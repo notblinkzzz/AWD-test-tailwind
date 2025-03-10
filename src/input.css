@@ -6,3 +6,13 @@
     font-weight: normal;
     font-size: normal;
 }
+
+@theme {
+    --font-logo: hanabara, "sans-serif";
+    --color-primary: #063f5c;
+    --color-secondary: #f7ad1a;
+    --color-third: #419ebd;
+    --color-fourth: #9fe7f5;
+
+    --color-primary-hover: rgba(6,63,92,0.5);
+}

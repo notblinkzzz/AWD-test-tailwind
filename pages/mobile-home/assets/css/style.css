@@ -1,0 +1,24 @@
+main {
+    a i {
+        color: white;
+        font-size: var(--text-3xl);
+    }
+    p {
+        color: var(--color-third);
+        font-size: var(--text-sm);
+        font-weight: var(--font-weight-bold);
+        background-color: beige;
+    }
+}
+
+* {
+    outline: 1px solid red;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+
+}
+

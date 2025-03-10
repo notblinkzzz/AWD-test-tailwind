@@ -12,91 +12,69 @@
     <title>Template tailwind test</title>
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col h-screen items-center justify-center bg-red-300 overflow-hidden">
 
-    <header class="flex items-center justify-between px-5 py-3  border-gray-300 bg-teal-500 b-bl rounded-bl-3xl rounded-br-3xl ">
-        <div>
-            <p class="text-base font-normal text-gray-200">Hello</p>
-            <h1 class="text-xl text-white font-semibold">Jamie Ventura</h1>
-        </div>
-        <i class="fa-solid fa-bell text-2xl text-white"></i>
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full flex justify-end p-4 ">
+        <button class="bg-primary text-fourth text-sm px-8 py-2 rounded-full shadow-md md:text-lg md:px-12 md:py-4 ">
+            SIGN IN
+        </button>
     </header>
 
-    <main class="flex-grow">
-        <div class="container mx-auto px-5 py-4 grid gap-4"> <!--PROFILE-->
-
-            <div class="grid gap-2">
-                <h1 class="text-xl font-semibold">Featured Languages</h1>
-                <div class="grid grid-cols-3">
-                    <div class=" bg-orange-100 rounded-full w-28 h-28 flex flex-col items-center justify-center gap-1">
-                        <img class="w-14 " src="./assets/img/china.png" alt="">
-                        <p class="text-sm text-gray-600">Mandarin</p>
-                    </div>
-                    <div class=" bg-orange-100 rounded-full w-28 h-28 flex flex-col items-center justify-center gap-1">
-                        <img class="w-14" src="./assets/img/spain.png" alt="">
-                        <p class="text-sm text-gray-600">Spanish</p>
-                    </div>
-                    <div class=" bg-orange-100 rounded-full w-28 h-28 flex flex-col items-center justify-center gap-1">
-                        <img class="w-14" src="./assets/img/japan.png" alt="">
-                        <p class="text-sm text-gray-600">Japanese</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- LINE -->
-            <div class="bg-slate-200 w-full h-0.5"></div>
-
-            <div class="grid grid-cols-[2fr_1fr] bg-orange-100 p-4 rounded-3xl shadow items-center gap-4">
-                <div>
-                    <h3 class="text-lg font-semibold">Interactive Lessons</h3>
-                    <p class="text-sm text-gray-600">Progress: 40%</p>
-                </div>
-                <div class="bg-orange-400 p-2 rounded-3xl text-white text-center">
-                    <p>Continue</p>
-                </div>
-            </div>
-
-
-            <div class="grid grid-cols-[2fr_1fr] bg-orange-100 p-4 rounded-3xl shadow items-center gap-4">
-                <div>
-                    <h3 class="text-lg font-semibold">Gamified Quizzes</h3>
-                    <p class="text-sm text-gray-600">Badges Earned: 5</p>
-                </div>
-                <div class="bg-orange-400 p-2 rounded-3xl text-white text-center">
-                    <p>Play Now</p>
-                </div>
-            </div>
-
-                <!--COMMUNITY EXCHANGE-->
-            <div class="bg-orange-100 p-4 rounded-3xl shadow">
-                <h3 class="text-lg font-semibold">Community Exchange</h3>
-                <p class="text-sm text-gray-600">Connect with native speakers for real-time practice.</p>
-                <div class="bg-orange-400 p-2 rounded-3xl text-white text-center m-2">
-                    <p>Start Exchange</p>
-                </div>
-            </div>
-
+    <!-- Main Content -->
+    <main class="w-full max-w-md text-center p-6 bg-green-300
+                md:max-w-screen">
+        <!-- Logo -->
+        <div class="flex items-center justify-center text-center gap-2
+        md:bg-red-500">
+            <img src="./assets/img/logo-app-removebg-preview.png" alt="Langora Logo" class="w-16 md:w-26">
+            <h1 class="text-3xl font-bold text-primary
+                       md:text-6xl"
+                       >Langora</h1>
         </div>
+
+        <!-- Title -->
+        <h2 class="text-2xl font-semibold mt-4 text-primary
+                   md:text-5xl"
+
+        >Sign up and start learning</h2>
+
+        <!-- Sign-in buttons -->
+         <div class="md:flex md:flex-row-reverse md:bg-pink-300 md:justify-center md:items-center md:gap-6">
+            <!--SOCIALS SIGN IN-->
+            <div class="mt-6 space-y-4">
+                <button class="flex items-center justify-center w-full bg-[#3B82F6] text-white py-3 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-google mr-3"></i> Sign up with Google
+                </button>
+                <button class="flex items-center justify-center w-full bg-[#475993] text-white py-3 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-facebook mr-3"></i> Sign up with Facebook
+                </button>
+                <button class="flex items-center justify-center w-full bg-black text-white py-3 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-apple mr-3"></i> Sign up with Apple
+                </button>
+            </div>
+
+            <p class="hidden text-primary font-semibold
+                      md:block md:text-2xl ">or</p>
+            <!-- Form -->
+            <form>
+                <p class="text-primary mt-6
+                            md:text-2xl md:font-semibold"
+                            >Sign up with email</p>
+                <div class="text-left">
+                    <label class="text-primary font-semibold text-sm">Email</label>
+                    <input type="email" class="w-full border-2 border-primary rounded-lg px-4 py-2 focus:outline-none mt-1">
+                </div>
+                <div class="text-left mt-4">
+                    <label class="text-primary font-semibold text-sm">Password</label>
+                    <input type="password" class="w-full border-2 border-primary rounded-lg px-4 py-2 focus:outline-none mt-1">
+                </div>
+                <button class="w-full bg-fourth text-primary font-bold py-3 rounded-full mt-6 shadow-lg">
+                    Sign up
+                </button>
+            </form>
+         </div>
     </main>
 
-    <footer class="grid gap-4 sm:grid-cols-8">
-
-        <div class="min-h-[100px] rounded-lg bg-orange-500 shadow sm:col-span-2 sm:block hidden">
-
-        </div>
-
-        <div class="min-h-20 shadow col-span-8 gap-4 flex justify-around items-center border-t-2 border-gray-300">
-            <i class="fa-solid fa-house text-2xl text-white active: bg-teal-500 p-3 rounded-full"></i>
-            <i class="fa-solid fa-book-open text-gray-400 text-2xl "></i>
-            <i class="fa-solid fa-message text-gray-400 text-2xl"></i>
-            <i class="fa-solid fa-user text-gray-400 text-2xl"></i>
-        </div>
-
-        <!-- <div class="min-h-[100px] rounded-lg bg-purple-500 shadow sm:col-span-2 sm:block hidden">
-
-        </div> -->
-
-    </footer>
 </body>
 </html>
